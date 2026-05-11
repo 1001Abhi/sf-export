@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "SF Export",
+  "version": "1.0.0",
+  "description": "Run Salesforce Bulk API 2.0 exports and save each result chunk as CSV files.",
+  "permissions": [
+    "activeTab",
+    "cookies"
+  ],
+  "host_permissions": [
+    "https://*.salesforce.com/*",
+    "https://*.salesforce-setup.com/*",
+    "https://*.force.com/*",
+    "https://*.my.salesforce.com/*",
+    "https://*.lightning.force.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "SF Export"
+  }
+}
